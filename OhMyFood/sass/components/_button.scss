@@ -1,0 +1,23 @@
+.button {
+    background: $gradient;
+    width: 220px;
+    height: 50px;
+    border-radius: 45px;
+    border: none;
+    box-shadow: 0px 0px 7px rgba(71,31,19,0.58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: opacity 250ms ease-in-out;
+    &__text {
+        color: white;
+        font-size: 1em;
+    }
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 0px 10px black;
+    }
+   
+}
+

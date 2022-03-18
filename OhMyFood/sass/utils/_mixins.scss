@@ -1,0 +1,29 @@
+@mixin pseudo-elmt {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+}
+
+@mixin bottom-elmt {
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+@mixin heart-hover {
+    transform: translateX(-99%);
+    background: #9356DC;
+    background: -webkit-linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    background: -moz-linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    transform-origin: bottom;
+}

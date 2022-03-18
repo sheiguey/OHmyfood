@@ -1,0 +1,49 @@
+.loader {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    animation: loader 0.5s ease-in-out 2.5s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:fixed;
+    cursor: wait;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    &__text {
+        font-family: 'Shrikhand', cursive;
+        font-size: 7vw;
+        text-align: center;
+        background: $gradient;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media all and (min-width: 992px) {
+            font-size: 5vw;
+        }
+    }
+    &__ellipsis {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+            &__point {
+            width: 4vw;
+            height: 4vw;
+            background: $gradient;
+            border-radius: 50%;
+            margin: 10% 5%;
+            animation: point $loader-point-duration ease-in-out backwards infinite alternate;
+            @media all and (min-width: 992px) {
+                width: 3vw;
+                height: 3vw;
+                margin: 10% 2%;
+            }
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-delay: $loader-point-delay * $i;
+                }
+            }
+        }
+    }
+}

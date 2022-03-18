@@ -1,0 +1,16 @@
+$colour-primary: #9356DC;
+$colour-secondary: #FF79DA;
+$colour-tertiary: #99E2D0;
+$colour-background: darken(white, 3%);
+$background-footer: rgb(53, 53, 53);
+$gradient: linear-gradient(172deg,$colour-secondary 0%, $colour-primary 100%);
+
+
+
+
+$animation-duration: 0.3s;
+$apparition-delay: 0.075s;
+
+$loader-duration: 3s;
+$loader-point-duration: 1.2s;
+$loader-point-delay: $loader-point-duration/3;

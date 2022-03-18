@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dd6c40669c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>OhMyFood</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">ohmyfood</h1>
+    </header>
+   
+
+    <div class="loader">
+        <div class="loader__text">Thanks for waiting</div>
+        <div class="loader__ellipsis">
+            <div class="loader__ellipsis__point loader__ellipsis__point--1"></div>
+            <div class="loader__ellipsis__point loader__ellipsis__point--2"></div>
+            <div class="loader__ellipsis__point loader__ellipsis__point--3"></div>
+        </div>
+    </div>
+ 
+    <main>
+        <section class="localisation">
+            <i class="fas fa-map-marker-alt localisation__icon"></i>
+            <label for="localisation"></label>
+            <input type="text" id="localisation" name="localisation" required
+       value="Paris, Belleville" class="localisation__input">
+        </section>
+
+
+
+        <aside class="abstract">
+            <h2 class="abstract__title">Réservez le menu qui vous convient</h2>
+            <p class="abstract__text">Découvrez les restaurants d'exception, sélectionnés par nos soins</p>
+            <a href="" class="abstract__button button">
+                <p class="button__text">Explorer nos restaurants</p>
+            </a>
+
+        </aside>
+
+        <aside class="operation">
+            <h2 class="operation__title">Fonctionnement</h2>
+            <a class="operation__button" href="">
+                <div class="operation__button__number">1</div>
+                <i class="fas fa-mobile-alt operation__button__icon"></i>
+                <i class="fas fa-mobile-alt operation__button__icon--hover"></i>
+                <div class="operation__button__text">Choisissez votre restaurant</div>
+            </a>
+            <a class="operation__button" href="">
+                <div class="operation__button__number">2</div>
+                <i class="fas fa-list-ul operation__button__icon"></i>
+                <i class="fas fa-list-ul operation__button__icon--hover"></i>
+                <div class="operation__button__text">Composez votre menu</div>
+            </a>
+            <a class="operation__button" href="">
+                <div class="operation__button__number">3</div>
+                <i class="fas fa-store operation__button__icon"></i>
+                <i class="fas fa-store operation__button__icon--hover"></i>
+                <div class="operation__button__text">Dégustez au restaurant</div>
+            </a>
+        </aside>
+
+        <article class="restaurants">
+            <h2 class="restaurants__title">Restaurants</h2>
+
+            <a href="./palette_gout.html" class="card">
+                <img src="./images/la-palette-du-gout.jpg" alt="La palette du goût" class="card__img"/>
+                <div class="card__body">
+                    <h3 class="card__body__title">La palette du goût</h3>
+                    <p class="card__body__text">Ménilmontant</p>
+                    <div class="card__body__favorite">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart card__body__favorite--hover"></i>
+                    </div>
+                </div>
+                <div class="card__new">
+                    <p class="card__new__text">Nouveau</p>
+                </div>
+            </a>
+
+            <a href="./note_enchantee.html" class="card">
+                <img src="./images/la-note-enchantee.jpg" alt="La note enchantée" class="card__img"/>
+                <div class="card__body">
+                    <h3 class="card__body__title">La note enchantée</h3>
+                    <p class="card__body__text">Charonne</p>
+                    <div class="card__body__favorite">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart card__body__favorite--hover"></i>
+                    </div>
+                </div>
+                <div class="card__new">
+                    <p class="card__new__text">Nouveau</p>
+                </div>
+            </a>
+
+            <a href="./a_la_francaise.html" class="card">
+                <img src="./images/a-la-francaise.jpg" alt="À la française" class="card__img"/>
+                <div class="card__body">
+                    <h3 class="card__body__title">À la française</h3>
+                    <p class="card__body__text">Cité Rouge</p>
+                    <div class="card__body__favorite">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart card__body__favorite--hover"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./delice_des_sens.html" class="card">
+                <img src="./images/le-delice-des-sens.jpg" alt="Le délice des sens" class="card__img"/>
+                <div class="card__body">
+                    <h3 class="card__body__title">Le délice des sens</h3>
+                    <p class="card__body__text">Folie-Méricourt</p>
+                    <div class="card__body__favorite">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart card__body__favorite--hover"></i>
+                    </div>
+                </div>
+            </a>
+
+
+        </article>
+    </main> 
+
+    <footer>
+        <nav class="footer">
+            <div class="footer__title">ohmyfood</div>
+            <a href="" class="footer__proposition">
+                <i class="fas fa-utensils footer__icon"></i>
+                <span class="footer__partner">Proposer un restaurant</span>
+            </a>
+            <a href="" class="footer__partnership ">
+                <i class="fas fa-hands-helping footer__icon"></i>
+                <span class="footer__partner">Devenir partenaire</span>
+            </a>
+            <a href="" class="footer__link">Mentions légales</a>
+            <a href="mailto:alexander.darracq@gmail.com" class="footer__link">Contact</a>
+        </nav>
+    </footer>
+   
+</body>
+</html>

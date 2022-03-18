@@ -1,0 +1,29 @@
+
+.footer {
+    background-color: $background-footer;
+    height: 173px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 6%;
+    font-size: 1em;
+    &__title {
+        color: white;
+        font-family: "Shrikhand", cursive;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+    &__icon{
+        @include bottom-elmt;
+        font-size: 0.75em;
+        width: 15px;
+    }
+    &__partner {
+        @include bottom-elmt;
+    }
+    &__link {
+        @include bottom-elmt;
+        font-weight: 300;
+    }
+}
+
